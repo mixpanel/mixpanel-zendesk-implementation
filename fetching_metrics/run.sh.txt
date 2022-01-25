@@ -1,0 +1,8 @@
+#! /bin/bash
+export env_setting=local
+export zd_userame=ZDUSERNAME
+export zd_password=ZDPASSWORD
+export mp_project_api_secret=MPAPISECRET
+export mp_project_token=MPPROJECTTOKEN
+export lookup_hours=1
+python get_metrics.py
