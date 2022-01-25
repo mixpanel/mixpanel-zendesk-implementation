@@ -53,11 +53,11 @@ The last step would be to [create triggers](https://support.zendesk.com/hc/en-us
 
 For the Ticket Created event, you can set the criteria to your specific Ticket Form from your implementation, and to be activated when the ticket is Created:
 
-![Trigger activation criteria](/explainer_repo/assets/images/trigger_conditions.png)
+![Trigger activation criteria](/assets/images/trigger_conditions.png)
 
 For the ticket Ticket Updated event, the criteria is similar, but using the Updated value instead of Created. Lastly, for Ticket Responded, the criteria would be the same, with the addition that the "comment" was public:
 
-![Trigger activation criteria](/explainer_repo/assets/images/trigger_event_responded.png)
+![Trigger activation criteria](/assets/images/trigger_event_responded.png)
 
 For the profile update, since the idea is to update the state of the ticket at significant points, you can set the conditions to the ticket being created OR being set to pending/solved/closed.
 
