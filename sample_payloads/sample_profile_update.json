@@ -1,13 +1,15 @@
-{
-    "$distinct_id":"{{ticket.id}}",
-    "$token": "<YOUR_PROJECT_TOKEN>",
-    "$ip": "0",
-    "$set": {
-        "status": "{{ticket.status}}",
-        "priority": "{{ticket.priority}}",
-        "organization": "{{ticket.organization.custom_fields.ORG_FIELD_KEY}}",
-        "requester": "{{ticket.requester.email}}",
-        "assignee_email": "{{ticket.assignee.email}}",
-        "ticket_category": "{{ticket.ticket_field_option_title_TICKET_FIELD_ID}}"
-    }
-}
+[
+    {
+        "$distinct_id":"{{ticket.id}}",
+        "$token": "<YOUR_PROJECT_TOKEN>",
+        "$ip": "0",
+        "$set": {
+            "status": "{{ticket.status}}",
+            "priority": "{{ticket.priority}}",
+            "organization": "{{ticket.organization.custom_fields.ORG_FIELD_KEY}}",
+            "requester": "{{ticket.requester.email}}",
+            "assignee_email": "{{ticket.assignee.email}}",
+            "ticket_category": "{{ticket.ticket_field_option_title_TICKET_FIELD_ID}}"
+        }
+    }   
+]

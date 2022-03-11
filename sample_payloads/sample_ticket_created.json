@@ -1,11 +1,13 @@
-{
-    "event": "Ticket Created",
-    "properties":{
-        "token": "<YOUR_PROJECT_TOKEN>",
-        "distinct_id": "{{ticket.id}}",
-        "status": "{{ticket.status}}",
-        "priority": "{{ticket.priority}}",
-        "organization": "{{ticket.organization.custom_fields.ORG_FIELD_KEY}}",
-        "requester": "{{ticket.requester.email}}"
+[
+    {
+        "event": "Ticket Created",
+        "properties":{
+            "token": "<YOUR_PROJECT_TOKEN>",
+            "distinct_id": "{{ticket.id}}",
+            "status": "{{ticket.status}}",
+            "priority": "{{ticket.priority}}",
+            "organization": "{{ticket.organization.custom_fields.ORG_FIELD_KEY}}",
+            "requester": "{{ticket.requester.email}}"
+        }
     }
-}
+]
