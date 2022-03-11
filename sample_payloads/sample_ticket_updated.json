@@ -1,6 +1,6 @@
 [
     {
-        "event": "Ticket Responded",
+        "event": "Ticket Updated",
         "properties":{
             "token": "<YOUR_PROJECT_TOKEN>",
             "distinct_id": "{{ticket.id}}",
@@ -9,8 +9,7 @@
             "organization": "{{ticket.organization.custom_fields.ORG_FIELD_KEY}}",
             "requester": "{{ticket.requester.email}}",
             "assignee_email": "{{ticket.assignee.email}}",
-            "ticket_category": "{{ticket.ticket_field_option_title_TICKET_FIELD_ID}}",
-            "public_comment": true
+            "ticket_category": "{{ticket.ticket_field_option_title_TICKET_FIELD_ID}}"
         }
     }
 ]
